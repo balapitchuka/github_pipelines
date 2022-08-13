@@ -13,6 +13,13 @@ Continuous Deployment
 
 ## Building pipelines with Github Actions
 - Triggers
+  - Following are available triggers
+    - Manually
+    - On code events
+      - on push or pull request
+      - around 30 other event types
+      - optionally with branch filters
+    - on a schedule
 - Workflows
   - The outer process description for how your pipeline should run is called a workflow
   - Within the workflow, there can be one or more separate jobs
@@ -22,6 +29,7 @@ Continuous Deployment
       - one to create the package
       - one to deploy to test
       - one to deploy to production
+  - Each workflow needs `some reason to start`. A common reason can be a change in your source control repository, in which case that reason is called an event
 - Actions
   - Each job contains one or more actions
   - Actions are the atomic building blocks that define one step in your job
