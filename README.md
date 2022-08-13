@@ -12,12 +12,22 @@ Continuous Deployment
 - Every accepted change is automatically deployed
 
 ## Building pipelines with Github Actions
-- Actions
 - Triggers
 - Workflows
   - The outer process description for how your pipeline should run is called a workflow
   - Within the workflow, there can be one or more separate jobs
   - Jobs can run concurrently depending on how you define them
+  - Example
+    - A typical small workflow could contain three jobs
+      - one to create the package
+      - one to deploy to test
+      - one to deploy to production
+- Actions
+  - Each job contains one or more actions
+  - Actions are the atomic building blocks that define one step in your job
+  - Examples
+    - Running a script or compiling some files
+    - In many cases, the first action is to clone or checkout your source code repository as they contain raw materials that most workflows operate on 
 
 
 ansible
