@@ -35,7 +35,14 @@ Continuous Deployment
   - Actions are the atomic building blocks that define one step in your job
   - Examples
     - Running a script or compiling some files
-    - In many cases, the first action is to clone or checkout your source code repository as they contain raw materials that most workflows operate on 
+    - In many cases, the first action is to clone or checkout your source code repository as they contain raw materials that most workflows operate on
+  - List of available actions is longer
+    - Checkout a repository
+    - Invoke a script
+    - Compile, test or deploy code
+    - Lint and run Ansible files
+    - Over 4000 others
+    - You can write your own
 
 
 ansible
