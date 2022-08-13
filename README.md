@@ -15,6 +15,9 @@ Continuous Deployment
 - Actions
 - Triggers
 - Workflows
+  - The outer process description for how your pipeline should run is called a workflow
+  - Within the workflow, there can be one or more separate jobs
+  - Jobs can run concurrently depending on how you define them
 
 
 ansible
