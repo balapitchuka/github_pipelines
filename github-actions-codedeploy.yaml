@@ -1,3 +1,11 @@
+#keep file in the following path
+# .github/workflows/github-actions-ec2.yml
+
+
+# Use CodeDeploy to deploy an application to an Auto Scaling group
+
+
+
 name: CI/CD Pipeline
 on:
   push:
